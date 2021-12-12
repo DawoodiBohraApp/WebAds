@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Verdana, sans-serif;
+            padding: 0px 0px 0px 0px;
+            margin: 0px 0px 0px 0px;
+            background-color: #353535;
+
+        }
+
+        .mySlides {
+            display: none;
+        }
+
+        img {
+            vertical-align: middle;
+        }
+
+        /* Slideshow container */
+
+        .slideshow-container {
+
+            max-width: 1000px;
+
+            position: relative;
+
+            margin: auto;
+
+        }
+
+        /* Caption text */
+
+        .text {
+
+            color: #f2f2f2;
+
+            font-size: 15px;
+
+            padding: 8px 12px;
+
+            position: absolute;
+
+            bottom: 8px;
+
+            width: 100%;
+
+            text-align: center;
+
+        }
+
+        /* Number text (1/3 etc) */
+
+        .numbertext {
+
+            color: #f2f2f2;
+
+            font-size: 12px;
+
+            padding: 8px 12px;
+
+            position: absolute;
+
+            top: 0;
+
+        }
+
+        /* The dots/bullets/indicators */
+
+        .dot {
+
+            transition: 0.6 ease;
+
+        }
+
+        .active {
+
+            background-color: #717171;
+
+        }
+
+        /* Fading animation */
+
+        .fade {
+
+            -webkit-animation-name: fade;
+
+            -webkit-animation-duration: 0.6s;
+
+            animation-name: fade;
+
+            animation-duration;
+            0.6;
+
+        }
+
+        @-webkit-keyframes fade {
+
+            from {
+                opacity: .4
+            }
+
+            to {
+                opacity: 1
+            }
+
+        }
+
+        @keyframes fade {
+
+            from {
+                opacity: .4
+            }
+
+            to {
+                opacity: 1
+            }
+
+        }
+
+        /* On smaller screens, decrease text size */
+
+        @media only screen and (max-width: 300px) {
+
+            .text {
+                font-size: 11px
+            }
+
+        }
+    </style>
+
+</head>
+
+<body>
+
+
+    <div class="slideshow-container">
+
+        <div class="mySlides fade">
+
+
+
+            <center><a href="https://www.amazon.in/dp/B08R6QR863/ref=cm_sw_r_apan_glt_fabc_7GMR3FZ6RN7A9K5VZQ51"> <img
+                        src="https://raw.githubusercontent.com/Naeemmd1/Naeemmd1/main/AmazonFire.jpg"
+                        alt="Rabbit with lop ears in barn" width="320px" height="50px"></a></center>
+
+
+        </div>
+
+
+
+        <div class="mySlides fade">
+
+
+
+
+        </div>
+
+    </div>
+
+    <br>
+
+    <div style="text-align:center">
+
+        <span class="dot"></span>
+
+        <span class="dot"></span>
+
+        <span class="dot"></span>
+
+    </div>
+    <script type="text/javascript" language="javascript">
+
+        var aax_size = '728x90';
+
+        var aax_pubname = 'naeemdiwan0b-21';
+
+        var aax_src = '302';
+
+    </script>
+
+    <script type="text/javascript" language="javascript" src="http://c.amazon-adsystem.com/aax2/assoc.js"></script>
+
+    <script type="text/javascript" language="javascript">
+
+        var aax_size = '728x90';
+
+        var aax_pubname = 'naeemdiwan0b-21';
+
+        var aax_src = '302';
+
+    </script>
+
+
+    <script>
+
+        var slideIndex = 0;
+
+        showSlides();
+
+        function showSlides() {
+
+            var i;
+
+            var slides = document.getElementsByClassName("mySlides");
+
+            var dots = document.getElementsByClassName("dot");
+
+            for (i = 0; i < slides.length; i++) {
+
+                slides[i].style.display = "none";
+
+            }
+
+            slideIndex++;
+
+            if (slideIndex > slides.length) { slideIndex = 1 }
+
+            for (i = 0; i < dots.length; i++) {
+
+                dots[i].className = dots[i].className.replace(" active", "");
+
+            }
+
+            slides[slideIndex - 1].style.display = "block";
+
+            dots[slideIndex - 1].className += " active";
+
+            setTimeout(showSlides, 6000); // Change image every 2 seconds
+
+        }
+
+    </script>
+
+</body>
+
+</html>
